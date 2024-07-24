@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="number"] {
+    width: calc(50% - 10px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="email"],
+input[type="date"] {
+    width: 100%;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+    position: relative;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+#submittedData {
+    margin-top: 20px;
+}
+
+#submitButton {
+    display: none;
+}
+
+/* Add your existing styles */
+
+.patient-names {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(100% + 5px); /* Extend more to the right */
+    height: calc(100% + 20px); /* Increase size in all directions */
+    box-sizing: border-box;
+    padding: 10px; /* Adjust padding to match other cells */
+    resize: none; /* Prevent resizing */
+    z-index: 1; /* Ensure it appears above the table cell */
+}
+
+.service-type {
+    width: 100%;
+}
+
+#totalHours {
+    width: calc(106% - 19px); /* Adjust width to span across two columns */
+}
+
+.time-dropdown {
+    width: 100%;
+}
